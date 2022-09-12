@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R-Group Random Password Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6332d06095.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <main>
+
+        <div class="container">
+            <img src="./images/R-Group-Logo.png" alt="">
+            <button id="generate_btn">Generate Password<i class="fa-solid fa-key"></i></button>
+            <div class="slider_wrapper">
+                <input type="range" value="12" min="6" max="20" class="slider" oninput="this.nextElementSibling.value = this.value" id="slider"><output>12</output>
+            </div>
+    
+            <label class="checkbox-text">Include Special Characters?<input type="checkbox" checked="checked" id="checkbox"></label>
+    
+            <section>
+                <h3 id="password"></h3>
+                <button id="copy" class="copy">
+                    <i class="fa-solid fa-copy"></i>
+                </button>
+            </section>
+            <h4></h4>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>
+            ©
+            <script>document.write(new Date().getFullYear())</script>
+            - Liam A
+        </p>
+        <a href="https://github.com/ElRoy-A" alt="Github link"><i class="fa fa-github"></i></a>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
